@@ -3,7 +3,7 @@ var app = express();
 var helmet = require('helmet');
 app.use(helmet());
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 var middleware = require('./middleware.js');
 
